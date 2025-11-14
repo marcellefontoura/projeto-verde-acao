@@ -1,0 +1,115 @@
+* {
+  margin: 0; // Remove o espaçamento externo padrão dos navegadores
+  padding: 0; // Remove preenchimento padrão
+  box-sizing: border-box; // Inclui padding e borda no cálculo do tamanho
+}
+
+header {
+  background-color: #66bb6a;
+  height: 10vh;
+  color: #ffffff;
+  //padding-left: 50px; Padding move internamente, movendo da esquerda para a direita
+  //padding-top: 25px; movendo internamente de cima para baixo
+  //padding-bottom: 20px; movendo internamente de baixo para cima (comentar o padding top)
+  //padding-right: 50px; Move internamente da direita para a esquerda
+
+  // margin: 30px; Mostrar que a margin move toda a caixa, movendo os 4 lados (cima, direita, baixo, esquerda)
+  // margin-top: 20px; // top - em cima
+  // margin-left: 30px; // left - esquerda
+  // margin-right: 50px; // right - direita
+  // margin-bottom: 20px; // bottom -  embaixo
+
+  h2 {
+    display: block; //Ocupa toda a linha
+    display: inline; //Ocupa somente o tamanho necessário
+    display: inline-block; // Deixa na mesma linha,e permite o controle de largura e altura
+    width: 40%;
+    padding-left: 160px;
+    margin-top: 40px;
+  }
+
+  /* O nav também é block por padrão, então muda o comportamento */
+
+  nav {
+    display: block; //Ocupa toda a linha
+    display: inline; //Ocupa somente o tamanho necessário
+    width: 40%; //Com o inline, ele não aceita tamanhos.
+    display: inline-block; // Deixa namesma linha,e permite o controle de largura e altura
+    text-align: end;
+
+    a {
+      margin-left: 40px; // espaço entre os links
+      color: #ffffff;
+      text-decoration: none; //Tira a estilização padrão da tag A
+    }
+  }
+}
+
+.background {
+  height: 60vh;
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 180px;
+
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-family: "Sansita Swashed", sans-serif;
+  }
+
+  p {
+    font-size: 2rem;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 100px;
+  }
+
+  button {
+    background-color: #66bb6a;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+  }
+}
+
+.cards {
+  background-color: #f1f8e9;
+  text-align: center;
+}
+
+.card {
+  width: 20vw;
+  height: 50vh;
+  background-color: #d65d5d;
+  border-radius: 20px;
+  border: solid red;
+  display: inline-block;
+
+  img {
+    width: 100%;
+    border-radius: 20px 20px;
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-size: 1.75rem;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+
+  button {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #66bb6a;
+    color: #ffffff;
+    border: none;
+    font-size: 1.25rem;
+    border-radius: 20px;
+  }
+}
